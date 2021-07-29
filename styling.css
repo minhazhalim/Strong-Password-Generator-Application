@@ -59,6 +59,7 @@ body {
      margin: 0.75rem 0rem;
      display: flex;
      justify-content: space-between;
+     text-transform: capitalize;
 }
 .password-container .password-body .generate {
      background-color: #ecb602;
@@ -71,4 +72,5 @@ body {
      width: 100%;
      margin-top: 1rem;
      padding: 0.75rem;
+     text-transform: capitalize;
 }
