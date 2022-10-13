@@ -1,0 +1,134 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+* {
+     margin: 0px;
+     padding: 0px;
+     box-sizing: border-box;
+     font-family: 'Poppins',sans-serif;
+}
+body {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     min-height: 100vh;
+     background-color: #4285F4;
+}
+.container {
+     width: 450px;
+     background-color: #fff;
+     border-radius: 8px;
+     box-shadow: 0px 10px 20px rgba(0,0,0,0.05);
+}
+.container h2 {
+     font-size: 1.31rem;
+     font-weight: 600;
+     padding: 1rem 1.75rem;
+     border-bottom: 1px solid #d4dbe5;
+}
+.container .wrapper {
+     margin: 1.25rem 1.75rem;
+}
+.container .wrapper .input-box {
+     position: relative;
+}
+.container .wrapper .input-box input {
+     width: 100%;
+     height: 53px;
+     background: none;
+     color: #000;
+     font-size: 1.06rem;
+     font-weight: 500;
+     border-radius: 4px;
+     letter-spacing: 1.4px;
+     border: 1px solid #aaa;
+     padding: 0rem 2.85rem 0rem 1rem;
+}
+.container .wrapper .input-box span {
+     position: absolute;
+     right: 13px;
+     cursor: pointer;
+     line-height: 53px;
+     color: #707070;
+}
+.container .wrapper .input-box span:hover {
+     color: #4285F4 !important;
+}
+.container .wrapper .password-indicator {
+     position: relative;
+     width: 100%;
+     height: 4px;
+     background-color: #dfdfdf;
+     margin-top: 0.75rem;
+     border-radius: 25px;
+}
+.container .wrapper .password-indicator::before {
+     content: "";
+     position: absolute;
+     width: 50%;
+     height: 100%;
+     border-radius: inherit;
+     transition: width 0.3s ease;
+}
+.container .wrapper .password-indicator#weak::before {
+     background-color: #E64A4A;
+     width: 20%;
+}
+.container .wrapper .password-indicator#medium::before {
+     background-color: #f1c80b;
+     width: 50%;
+}
+.container .wrapper .password-indicator#strong::before {
+     background-color: #4285F4;
+     width: 100%;
+}
+.container .wrapper .password-length {
+     margin: 1.56rem 0rem 1.25rem;
+}
+.container .wrapper .password-length .details {
+     display: flex;
+     justify-content: space-between;
+}
+.container .wrapper .password-length input {
+     width: 100%;
+     height: 5px;
+}
+.container .wrapper .password-settings .options {
+     display: flex;
+     flex-wrap: wrap;
+     list-style: none;
+     margin-top: 1rem;
+}
+.container .wrapper .password-settings .options .option {
+     display: flex;
+     align-items: center;
+     margin-bottom: 1rem;
+     width: calc(100% / 2);
+}
+.container .wrapper .password-settings .options .option:first-child {
+     pointer-events: none;
+}
+.container .wrapper .password-settings .options .option:first-child input {
+     opacity: 0.7;
+}
+.container .wrapper .password-settings .options .option input {
+     width: 16px;
+     height: 16px;
+     cursor: pointer;
+}
+.container .wrapper .password-settings .options .option label {
+     color: #4f4f4f;
+     padding-left: 0.63rem;
+     cursor: pointer;
+}
+.container .wrapper .generate-button {
+     width: 100%;
+     background-color: #4285F4;
+     color: #fff;
+     border: none;
+     border-radius: 5px;
+     outline: none;
+     font-size: 1.06rem;
+     text-transform: uppercase;
+     cursor: pointer;
+     margin: 0.94rem 0rem 1.3rem;
+     padding: 0.94rem 0rem;
+}
